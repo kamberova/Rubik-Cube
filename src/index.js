@@ -4,9 +4,9 @@ const path = require('path');
 
 const app = express();
 
-console.log(path.resolve('./src/views/'));
+console.log(path.resolve('./src/views'));
 
-app.set('views', path.resolve('./src/views/'));
+app.set('views', path.resolve('./src/views'));
 
 app.engine('hbs', handlebars({
     extname: 'hbs'
